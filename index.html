@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Falcão OB | Comunidade</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+    @import url('css/button.css'); /* Certifique-se de que este caminho está correto */
+
+    body {
+      background: linear-gradient(to bottom, #000, #1a0e0a);
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    .hero {
+      background: url('img/trader.webp') no-repeat center/cover;
+      background: url('img/trader01.png') no-repeat center/cover;
+      padding: 12rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+    .hero img {
+      max-height: 400px;
+    }
+    .hero .card {
+      background-color: #1e1e1e;
+      border: none;
+      padding: 1.5rem;
+      color: #fff;
+      background-color: transparent;
+      background-image: linear-gradient(180deg, #220D00 0%, #0F0601 100%);
+      border-radius: 1em;
+      box-shadow: 10px 10px 15px #000;
+    }
+    .btn-acessar {
+      background: #00aaff;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 0.75rem 2rem;
+      margin-top: 1rem;
+    }
+    .section-resultados {
+      padding: 3rem 1rem;
+    }
+    /* Estilos para o Owl Carousel */
+    .owl-carousel .item {
+      padding: 10px; /* Espaçamento entre os itens */
+    }
+    .owl-carousel .item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    /* Centraliza os botões de navegação do Owl Carousel */
+    .owl-nav {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .owl-nav button.owl-prev,
+    .owl-nav button.owl-next {
+        background-color: #333 !important; /* Cor de fundo dos botões */
+        color: #fff !important; /* Cor do texto dos botões */
+        border-radius: 50% !important;
+        width: 40px;
+        height: 40px;
+        font-size: 24px !important;
+        line-height: 0.5 !important;
+        margin: 0 5px;
+        cursor: pointer;
+        outline: none; /* Remove o contorno ao focar */
+        border: none !important; /* Garante que não há borda */
+    }
+    .owl-nav button.owl-prev:hover,
+    .owl-nav button.owl-next:hover {
+        background-color: #555 !important; /* Cor de fundo ao passar o mouse */
+    }
+    .owl-prev span, .owl-next span {
+        position: relative;
+        top: -3px; /* Ajusta a posição do ícone */
+    }
+    .owl-dots {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .owl-dot span {
+        background: #555 !important; /* Cor dos dots inativos */
+    }
+    .owl-dot.active span {
+        background: #00aaff !important; /* Cor do dot ativo */
+    }
+
+
+    .footer {
+      padding: 2rem;
+      text-align: center;
+      background-color: #000;
+    }
+    .trophy {
+      font-size: 2rem;
+      color: orange;
+      fill: orange;
+
+    }
+    .headline-title{
+      font-family: "Bebas Neue", Sans-serif;
+      font-size: 48px;
+      font-weight: 500;
+      color: #FF6200;
+    }
+    h2{
+      font-family: "Poppins", Sans-serif;
+      font-size: 38px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero d-flex flex-column align-items-center justify-content-center">
+    <div class="container">
+      <div class="row">
+    <div class="card col-md-6 text-center mb-4">
+      <h5 class="headline-title">FALCÃO | COMUNIDADE</h5>
+      <h2 class="fw-bold">MAIOR COMUNIDADE<br>TRADER DO MUNDO!</h2>
+      <p class="mt-2 px-5">São mais de 20k alunos que recebem análises, dicas e operam ao vivo comigo todos os dias de maneira gratuita.</p>
+      <button class="glow mx-auto">
+          <span class="text">QUERO ACESSAR A COMUNIDADE</span>
+          <span class="shimmer"></span>
+      </button>
+    </div>
+    </div>
+    </div>
+    </section>
+
+  <section class="section-resultados text-center">
+    <h3 class="mb-4 headline-title">Resultados</h3>
+    <p class="mb-5 h5">Aqui estão alguns resultados de quem já teve uma grande evolução no mercado financeiro com os meus serviços:</p>
+
+    <div id="owl-resultados" class="owl-carousel owl-theme mx-auto" style="max-width: 1200px;">
+        </div>
+
+      <button class="glow mx-auto mt-3">
+        <span class="text">QUERO ACESSAR A COMUNIDADE</span>
+        <span class="shimmer"></span>
+      </button>
+  </section>
+
+  <section class="container p-5">
+    <div class="trophy d-flex flex-column align-items-center">
+      <svg width="3em" height="3em" aria-hidden="true" class="e-font-icon-svg e-fas-trophy" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 0-24 10.7-24 24v40H24C10.7 64 0 74.7 0 88v56c0 35.7 22.5 72.4 61.9 100.7 31.5 22.7 69.8 37.1 110 41.7C203.3 338.5 240 360 240 360v72h-48c-35.3 0-64 20.7-64 56v12c0 6.6 5.4 12 12 12h296c6.6 0 12-5.4 12-12v-12c0-35.3-28.7-56-64-56h-48v-72s36.7-21.5 68.1-73.6c40.3-4.6 78.6-19 110-41.7 39.3-28.3 61.9-65 61.9-100.7V88c0-13.3-10.7-24-24-24zM99.3 192.8C74.9 175.2 64 155.6 64 144v-16h64.2c1 32.6 5.8 61.2 12.8 86.2-15.1-5.2-29.2-12.4-41.7-21.4zM512 144c0 16.1-17.7 36.1-35.3 48.8-12.5 9-26.7 16.2-41.8 21.4 7-25 11.8-53.6 12.8-86.2H512v16z"></path></svg>
+    </div>
+    <h4 class="mt-2 my-2 text-center">Referência em Opções Binárias</h4>
+  </section>
+
+  <footer class="footer">
+    <small class="d-block mt-3">Falcão OB © Todos os Direitos Reservados.</small>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+      // Array de depoimentos
+      var depoimentos = [];
+      for (var i = 1; i <= 9; i++) {
+        depoimentos.push('depoimentos/' + i + '.PNG');
+      }
+
+      // Adicione os itens ao carrossel Owl Carousel
+      const owlCarouselContainer = $('#owl-resultados'); // Seleciona o elemento pelo ID
+
+      depoimentos.forEach((depoimento) => {
+        // Cada item no Owl Carousel é uma div simples com a classe 'item'
+        const itemHtml = `<div class="item"><img src="img/${depoimento}" alt="Depoimento"></div>`;
+        owlCarouselContainer.append(itemHtml);
+      });
+
+      // Inicialize o Owl Carousel
+      $(document).ready(function(){
+        owlCarouselContainer.owlCarousel({
+            loop:true, // Permite que o carrossel volte ao início após o último item
+            margin:10, // Espaçamento entre os itens
+            nav:true, // Mostra os botões de navegação (próximo/anterior)
+            dots: false, // Mostra os indicadores de slide (pontos)
+            responsive:{
+                0:{ // Para telas com largura de 0px ou mais (celulares)
+                    items:1, // Mostra 1 item
+                    slideBy:1 // Avança 1 item por vez
+                },
+                600:{ // Para telas com largura de 600px ou mais (tablets)
+                    items:2, // Mostra 2 itens
+                    slideBy:1 // Avança 1 item por vez
+                },
+                900:{ // Para telas com largura de 900px ou mais (desktops)
+                    items:3, // Mostra 3 itens
+                    slideBy:1 // Avança 1 item por vez
+                }
+            }
+        });
+      });
+    </script>
+</body>
+</html>
