@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: './'
-          dangerous-clean-slate: true
+          server-dir: './clientes.rodrigo.inf.br/jv/'
           exclude: '.htaccess'
           log-level: verbose
           protocol: ftp
