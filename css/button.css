@@ -61,7 +61,7 @@ button.glow {
     border-radius: 0.66em;
     scale: 1;
     transition: all var(--spring-duration) var(--spring-easing);
-    padding: 1.2em 1.4em;
+    padding: 0.8em 1em;
 }
 
 button.glow:hover:not(:active),
