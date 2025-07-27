@@ -1,0 +1,24 @@
+name: Deploy no CPanel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout do Código
+        uses: actions/checkout@v4 # Usa a action para fazer checkout do seu repositório
+
+      - name: Deploy para CPanel via FTP/SFTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.0
+        with:
+          server: ${{ secrets.HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: './'
+          server-dir: './clientes.rodrigo.inf.br/jv/lp-falcao/'
+          protocol: ftp
