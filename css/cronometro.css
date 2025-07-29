@@ -1,0 +1,13 @@
+#cronometro {
+  background-color: darkblue;
+  border-radius: 0.5em;
+  padding: 0.8em;
+}
+#cronometro .tempo {
+  font-weight: bold;
+  color: aquamarine;
+}
+#cronometro .hora-alvo {
+  font-weight: bold;
+  color: aquamarine;
+}
