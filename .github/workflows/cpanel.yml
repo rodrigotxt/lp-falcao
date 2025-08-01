@@ -20,5 +20,5 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: './'
-          server-dir: './clientes.rodrigo.inf.br/jv/lp-falcao/'
+          server-dir: ${{ secrets.REMOTE_DIR }} # ex: ./public_html/online/
           protocol: ftp
